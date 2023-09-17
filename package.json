@@ -4,7 +4,10 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,8 @@
   },
   "homepage": "https://github.com/Gridable/core#readme",
   "devDependencies": {
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }
 }
