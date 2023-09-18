@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Gridable/core/issues"
   },
-  "homepage": "https://github.com/Gridable/core#readme"
+  "homepage": "https://github.com/Gridable/core#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
 }
