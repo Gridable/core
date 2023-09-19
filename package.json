@@ -27,6 +27,8 @@
     "lint": "eslint . --ext .vue,.js,.ts, --ignore-path .gitignore",
     "lint:fix": "npm run lint -- --fix --cache",
     "prepack": "npm run build",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --ignore-unknown --cache --write .",
     "semantic-release": "semantic-release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -61,6 +63,7 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unicorn": "^48.0.1",
     "move-file-cli": "^3.0.0",
+    "prettier": "^3.0.3",
     "semantic-release": "^22.0.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
