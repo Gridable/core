@@ -24,7 +24,7 @@
     "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
     "build:esm": "tsc -p ./configs/tsconfig.esm.json && move-file lib/esm/index.js lib/esm/index.mjs",
     "clean": "del-cli ./lib",
-    "lint": "eslint . --ext .js,.ts, --ignore-path .gitignore",
+    "lint": "eslint . --ext .js,.ts, --ignore-path .gitignore .eslintignore",
     "lint:fix": "npm run lint -- --fix --cache",
     "prepack": "npm run build",
     "prepare": "husky install",

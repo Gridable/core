@@ -58,7 +58,8 @@ module.exports = {
   },
 
   parserOptions: {
-    project: './tsconfig.esm.json',
+    ecmaVersion: 'es2022',
+    project: './tsconfig.base.json',
     tsconfigRootDir: resolve(__dirname, 'configs'),
   },
 };
