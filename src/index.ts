@@ -1,10 +1,5 @@
-export interface Matrix2DConfig {
-  x: number;
-  y: number;
-}
+import { Matrix2D } from './Matrix2D';
 
-export class Matrix2D {
-  constructor(config: Matrix2DConfig) {
-    console.log(config);
-  }
-}
+const matrix = new Matrix2D({ x: 1, y: 2 });
+
+console.log(matrix);
