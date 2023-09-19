@@ -5,5 +5,6 @@ export interface Matrix2DConfig {
 
 export class Matrix2D {
   constructor(config: Matrix2DConfig) {
+    console.log(config);
   }
 }
