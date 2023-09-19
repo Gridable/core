@@ -48,15 +48,13 @@ module.exports = {
   settings: {
     'import/resolver': {
       alias: {
-        map: [
-          ['@', './src'],
-        ],
+        map: [['@', './src']],
         extensions: ['.json', '.js', '.ts'],
       },
     },
   },
 
   parserOptions: {
-    project: './configs/tsconfig.base.json'
-  }
+    project: './configs/tsconfig.base.json',
+  },
 };
