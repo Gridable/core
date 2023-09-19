@@ -62,4 +62,6 @@ module.exports = {
     project: './tsconfig.base.json',
     tsconfigRootDir: resolve(__dirname, 'configs'),
   },
+
+  ignorePatterns: ['jest.config.js'],
 };
