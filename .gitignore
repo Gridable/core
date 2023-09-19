@@ -32,6 +32,3 @@ webStorm.config.js
 # Utilities cache
 .eslintcache
 .stylelintcache
-
-# Auto generated file by unplugin-vue-components
-components.d.ts
