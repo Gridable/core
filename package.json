@@ -20,13 +20,15 @@
     "lib/**/*"
   ],
   "scripts": {
-    "clean": "del-cli ./lib",
     "build": "npm run clean && npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc -p ./configs/tsconfig.esm.json && move-file lib/esm/index.js lib/esm/index.mjs",
     "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:esm": "tsc -p ./configs/tsconfig.esm.json && move-file lib/esm/index.js lib/esm/index.mjs",
+    "clean": "del-cli ./lib",
+    "lint": "eslint . --ext .vue,.js,.ts, --ignore-path .gitignore",
+    "lint:fix": "npm run lint -- --fix --cache",
+    "prepack": "npm run build",
     "semantic-release": "semantic-release",
-    "prepack": "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "release": {
     "branches": [
