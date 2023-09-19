@@ -55,6 +55,6 @@ module.exports = {
   },
 
   parserOptions: {
-    project: './configs/tsconfig.base.json',
+    project: './configs/tsconfig.esm.json',
   },
 };
