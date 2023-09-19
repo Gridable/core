@@ -1,5 +1,8 @@
+const { resolve } = require('path');
+
 module.exports = {
   root: true,
+
   extends: [
     'airbnb-base',
     'airbnb-typescript/base',
@@ -55,6 +58,7 @@ module.exports = {
   },
 
   parserOptions: {
-    project: './configs/tsconfig.esm.json',
+    project: './tsconfig.esm.json',
+    tsconfigRootDir: resolve(__dirname, 'configs'),
   },
 };
