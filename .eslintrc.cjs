@@ -59,8 +59,8 @@ module.exports = {
 
   parserOptions: {
     ecmaVersion: 'es2022',
-    project: './tsconfig.base.json',
-    tsconfigRootDir: resolve(__dirname, 'configs'),
+    project: './tsconfig.json',
+    tsconfigRootDir: './',
   },
 
   ignorePatterns: ['jest.config.js'],

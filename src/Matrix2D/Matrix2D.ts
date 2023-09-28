@@ -1,9 +1,9 @@
 import { Matrix2DConfig } from './Matrix2D.types';
 
 export default class Matrix2D<T> {
-  #buffer: Array<T> = [];
+  readonly #buffer: Array<T> = [];
 
-  #size: number = 0;
+  readonly #size: number = 0;
 
   constructor({ x, y }: Matrix2DConfig) {
     this.#buffer = Array.from({ length: x * y });
