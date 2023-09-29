@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "lib": ["ES2022", "DOM"],
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "../lib",
+    "declarationDir": "../lib/types",
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -10,5 +16,5 @@
     "declarationMap": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["../src"]
+  "include": ["./src"]
 }
