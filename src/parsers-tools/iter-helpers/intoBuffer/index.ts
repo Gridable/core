@@ -1,0 +1,1 @@
+export { intoBuffer } from './intoBuffer';
